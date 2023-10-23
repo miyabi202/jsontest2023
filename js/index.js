@@ -7,7 +7,7 @@ let loginBtn = document.querySelector('.loginBtn');
 
 // 註冊
 function signUp() {
-    if (signUpEmail.value == 'admin@mail.com' && signUpPassword.value == '123123') {
+    if (signUpEmail.value == 'admin@gmail.com' && signUpPassword.value == '123456') {
         axios.post('https://nini-json-server.onrender.com/users', {
             "email": signUpEmail.value,
             "password": signUpPassword.value,
@@ -56,7 +56,7 @@ signUpBtn.addEventListener('click', function () {
 
 // 登入
 function login() {
-    if (loginEmail.value == 'admin@mail.com' && loginPassword.value == '123123') {
+    if (loginEmail.value == 'admin@gmail.com' && loginPassword.value == '123456') {
         axios.post('https://nini-json-server.onrender.com/login', {
             "email": loginEmail.value,
             "password": loginPassword.value,
